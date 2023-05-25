@@ -1,3 +1,6 @@
+# .env files that include API key
+.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
