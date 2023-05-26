@@ -1,28 +1,35 @@
+#!/usr/bin/env python3
 import os
 import openai
 import openpyxl 
 from dotenv import load_dotenv
-load_dotenv() 
 from datetime import datetime
 
 class Resp(object):
+    ''' An object for storing the OpenAI responses as attributes '''
     pass
 
 def summ_prompt(ab_str):
     '''
-    Given abstract string, generate prompt string
+    Given abstract paragraph string, 
+    return the prompt string to request a summary.
     '''
     preamble = "Generate a one sentence summary of the following paragraph.  The summary should describe what research was conducted and the key conclusion."
     return preamble + "\n\nParagraph:\n" + ab_str
 
 def app_prompt(ab_str):
     '''
-    Given abstract string, generate prompt string
+    Given abstract string, 
+    return the prompt string to request a list of potential applications.
     '''
     preamble = "Then generate a list of two of the most relevant military and defense applications of the engineering technology described in the following paragraph.  Each item in the list in the list should be a single sentence.  The list should be formatted in markdown"
     return preamble + "\n\nParagraph:\n" + ab_str
 
 def cat_prompt(categories, ab_str):
+    '''
+    Given a list of categories as strings and the abstract string,
+    return the prompt to request categorization of the abstract.
+    '''
     preamble = """Below is a set of categories and a one paragraph research abstract.  Select the one best category to fit the following paragraph.
 
 """
@@ -31,17 +38,17 @@ def cat_prompt(categories, ab_str):
     
     return preamble + '\nParagraph:\n' +ab_str
 
-
-# Load your API key from an environment variable or secret management service
+# Load the .env variables and set API key.
+load_dotenv() 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-datafile='ThesisAbstractsMAE.xlsx'
+# Open Excel file with authors and abstracts.
+datafile='abstracts.xlsx'
 wb = openpyxl.load_workbook(datafile)
 ws = wb.active
 
-# Store everything as list of objects
+# Read rows,  skipping header, and generate list of Resp objects.
 records = []
-# Read rows - skip header
 for row in ws.iter_rows(
         min_row = 2, max_row = ws.max_row,
         min_col=1, max_col=ws.max_column,
@@ -51,7 +58,7 @@ for row in ws.iter_rows(
     resp.abstract = row[1]
     records.append(resp)
 
-
+# Specify the categories for organizing the topics.
 categories = ['Materials Science and Engineering',
               'Robotics and Controls Engineering',
               'Space and Aerospace Engineering',
@@ -60,8 +67,11 @@ categories = ['Materials Science and Engineering',
               'Survivability and Weaponeering',
               'Solid Mechanics and Structure Engineering']
 
+# Specify which Open AI model we want to use.
 model = "text-davinci-003"
-#records = [records[0]]
+
+# Loop through the records and do three queries for each record:
+# 1. Summarize 2. Appply and 3. Categorize 
 for ii in range(len(records)):
     print("Summarizing %d of %d for <%s>"%(ii+1,len(records),records[ii].name))
     psumm = summ_prompt(records[ii].abstract)
@@ -86,14 +96,12 @@ for ii in range(len(records)):
     records[ii].category = rcat.choices[0].text
 
 
-# Generate a summary of summaries
+# Using all the summaries, request a summary of summaries
 ssumm = ''
 for record in records:
     ssumm += record.summary
 
-prompt = 'Generate a list of between two and four categories that summarize the following engineering research projects.  The research projects are described in the following paragraphs: \n\n'+ssumm
-
-prompt = 'Summarize the engineering topics described in the text below.  The summary should be a list of the five most important technology categories.  The list should be in outline format: \n\n' + ssumm 
+prompt = 'Summarize the engineering topics described in the text below.  The summary should be a list of the five most important technology categories.  The list should be in markdown list format: \n\n' + ssumm 
 
 #to summarze the engineering projects described in the paragraphs below.  The list  should be generated in bullet point format: \n\n'+ssumm
 
@@ -101,23 +109,22 @@ rsumm= openai.Completion.create(model = model,
                                 prompt = prompt,
                                 max_tokens = 400,
                                 temperature=0.3)
-#print(rsumm.choices[0].text)
 
+# Write the output as a markdown document
 outf = 'synopsis.md'
 print('Writing output to <%s>'%outf)
 f = open(outf,'w')
 now = datetime.now()
-f.write("""# MAE Thesis Synopsis
+f.write("""# Synopsis of Abstracts
 
-Generated summary of %d theses with the ``%s`` model on %s. \n"""%(len(records), model, now.strftime('%d %b %Y %H:%M:%S')))
+Generated summary of %d abstracts with the ``%s`` model on %s. \n"""%(len(records), model, now.strftime('%d %b %Y %H:%M:%S')))
 
 f.write("\nEach abstract is summarized by a single sentence and two potential defense applications.\n")
 
 f.write("Overall synopsis of top categories this quarter.\n")
 f.write(rsumm.choices[0].text + '\n')
 
-# Write categoties
-
+# Write the summaries for each category
 for c in categories:
     f.write("\n\n## " + c + "\n")
     cnt = 0
@@ -129,6 +136,5 @@ for c in categories:
             cnt += 1
     if cnt < 1:
         f.write('\n--\n')
-
 
 f.close()
