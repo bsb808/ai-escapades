@@ -22,7 +22,7 @@ def app_prompt(ab_str):
     Given abstract string, 
     return the prompt string to request a list of potential applications.
     '''
-    preamble = "Then generate a list of two of the most relevant military and defense applications of the engineering technology described in the following paragraph.  Each item in the list in the list should be a single sentence.  The list should be formatted in markdown"
+    preamble = "Generate a list of two of the most relevant military and defense applications of the engineering technology described in the following paragraph.  Each item in the list in the list should be a single sentence.  The list should be formatted in markdown"
     return preamble + "\n\nParagraph:\n" + ab_str
 
 def cat_prompt(categories, ab_str):
@@ -102,8 +102,6 @@ for record in records:
     ssumm += record.summary
 
 prompt = 'Summarize the engineering topics described in the text below.  The summary should be a list of the five most important technology categories.  The list should be in markdown list format: \n\n' + ssumm 
-
-#to summarze the engineering projects described in the paragraphs below.  The list  should be generated in bullet point format: \n\n'+ssumm
 
 rsumm= openai.Completion.create(model = model,
                                 prompt = prompt,
