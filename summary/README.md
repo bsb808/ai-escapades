@@ -1,6 +1,6 @@
 # ChatGPT to generate a succinct summary of research abstracts.
 
-Code example to go along with blog post: TBD
+Code example to go along with blog post: [ChatGPT to Summarize Research Abstracts](https://mearpub.com/ai-escapades/2023/05/26/chatgpt-to-summarize-research-abstracts/)
 
 ## Run the example
 
