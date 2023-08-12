@@ -15,11 +15,11 @@ logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 load_dotenv() 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Index / embed the custom data 
+# Index / embed the custom data, in the case the text of Alice in Wonderland 
 documents = SimpleDirectoryReader('data_alice').load_data()
 index = VectorStoreIndex.from_documents(documents)
 
-# Query
+# Example query the LLM interface to the Alice data
 query_engine = index.as_query_engine()
 query = "What does Alice look like?"
 response = query_engine.query(query)
