@@ -1,205 +1,427 @@
 # Synopsis of Abstracts
 
-Generated summary of 24 abstracts with the ``text-davinci-003`` model on 25 May 2023 21:03:21. 
+Generated summary of 28 abstracts with the ``gpt-3.5-turbo-instruct`` model on 04 Jun 2024 15:37:01. 
 
 Each abstract is summarized by a single sentence and two potential defense applications.
 Overall synopsis of top categories this quarter.
 
 
-1. Spacecraft Maneuver Tactics
-2. Swarm Tactics for Unmanned Surface Vessels
-3. Retrofitting of U.S. Navy's Yard Torpedo Test Craft
-4. Cold Spray of Compositionally Graded, Dual-Reinforced Aluminum Metal Matrix Composites
-5. Piezoelectric Materials for UAVs
+- Underwater explosion loading and its impact on oceanic bottom types and materials
+- Decentralized swarm control of unmanned surface vessels using computer vision
+- Reinforcement learning to enhance the lethality of laser guided bombs
+- Ultra-high temperature ceramics (UHTCs) for resisting CMAS attack in gas turbine engines
+- Low-cost AI-enabled stereo cameras for GPS and RF-free navigation and coordination for USVs
 
 
 ## Materials Science and Engineering
 
 
-### Nicolas Twisselman
+### Gianluca Freschi
 
-Research conducted on cold spray of compositionally graded, dual-reinforced aluminum metal matrix composites (Al-MMC) resulted in increased adhesion strength and wear resistance of the coatings.
+Title: MODULATED THERMOGRAPHIC ANALYSIS OF THERMAL DIFFUSIVITY IN MATERIALS USING EULERIAN VIDEO MAGNIFICATION
 
-1. Gas dynamic cold spray can be used to in-field repair aluminum surfaces on aircraft and maritime vessels.
-2. High energy ball milling can be used to create dual-reinforced aluminum metal matrix composites that can be cold-sprayed onto aircraft-grade aluminum alloy to improve wear resistance.
+Research conducted on infrared thermography and Eulerian Video Magnification (EVM) concluded that EVM can be used to accurately detect and display thermal gradients in videos, allowing for a non-destructive visualization of print quality in metal components and structures.
 
-### Margaret Ruud
 
-Research was conducted to explore the dispersion of carbon nanotubes in an aluminum metal matrix composite, testing different methods including high energy ball milling, cryomilling, and wet chemistry, with the wet chemistry method producing the best dispersion results, and the cold sprayed coatings being tested for corrosion and wear resistance with low deposition efficiency.
+ Naval Applications: 
 
-1. The dispersion of carbon nanotubes in an aluminum metal matrix composite can be used to create strong and lightweight armor plating for military vehicles.
-2. The combination of carbon nanotubes and aluminum powder via high energy ball milling, cryomilling, and wet chemistry methods can be used to create lightweight and durable parts for military aircraft.
+- Additive manufacturing quality control: Infrared Thermography (IRT) can be used to detect sub-surface defects in 3D printed parts, ensuring their structural integrity and functionality.
+- Non-destructive testing of military equipment: The Eulerian Video Magnification (EVM) technique can be used to reveal hidden flaws and defects in military equipment, allowing for early detection and maintenance to prevent equipment failure.
 
-### Nathan Mathes
 
-This study investigated the effects of reinforced coatings on the wear and corrosion resistance of aircraft-grade aluminum, finding that wear resistance improved slightly with the 2 vol.% µB4C sample, while the 2 vol.% µB4C sample had the least average weight gain and delamination of coating in the corrosion tests.
+### Sidney Hall-Smith
 
-1. Cold spray coatings reinforced with a combination of graphene-nanoplatelets and micro-boron carbide can be used to improve the wear and corrosion resistance of aircraft-grade aluminum. 
-2. Cold spray coatings reinforced with a combination of graphene-nanoplatelets and micro-boron carbide may be used to protect military aircraft from wear and corrosion in aggressive environments.
+Title: FABRICATION AND CHARACTERIZATION OF ADVANCED ALUMINUM ALLOYS WITH LIQUID METAL PRINTING TECHNIQUES
 
-### Nathan Matalavage
 
-This thesis researched methods to sinter 3-D printed ceramic materials embedded with nanoparticles, specifically hydroxyapatite with boron nitride nanotubes, and concluded that by controlling the temperature and sintering medium, the nanoparticles can be kept intact despite being exposed to high temperatures.
+Research was conducted to use liquid metal printing to print pure Al 7075 parts without hot cracking defects, which could be beneficial for naval applications, and testing of hardness and tensile strength will be conducted to determine the effectiveness of the method.
 
-1. Additive manufacturing can be used to create ceramic materials with geometries and properties required for advanced military and defense applications. 
-2. Ceramic parts reinforced with nanoparticles can be post-processed using controlled heat treatment to achieve desired properties for military and defense applications.
 
-### James Whiting
+ Naval Applications: 
 
-This study demonstrated that the lobed-RDRE concept provides excellent fuel and oxidizer mixing with a lower pressure drop requirement, which is due to the ability to exploit the wave dynamics to rapidly refresh the mixing region while maintaining a lower overall pressure ratio.
+1. Additive manufacturing of high-strength aluminum alloys for naval shipbuilding and repair.
+2. Use of liquid metal printing for producing pure Al 7075 parts without hot cracking defects in military aircraft and vehicles.
 
-1. The lobed-mixer concept can be used for the development of more efficient and reliable rocket propulsion systems for military and defense applications.
-2. The computational model developed in this study can be used to improve the design of rocket propulsion systems and optimize injection parameters for military and defense applications.
 
-### Michael O'Donnell
+### Stephen Stokes
 
-Research conducted on laser powder bed fusion (LPBF) of 316L stainless-steel and graphene nanoplatelets (GNP) concluded that the addition of GNP particles enhanced the hydrophobicity of the 3-D printed samples, with further improvements possible with increased GNP concentration or the addition of another nanomaterial with hydrophobic tendencies.
+Title: DISPERSION AND PRECIPITATION STRENGTHENING OF ADDITIVELY MANUFACTURED ALUMINUM ALLOYS
 
-1. The LPBF process could be used to manufacture corrosion-resistant components for use in military aircrafts.
-2. The hydrophobicity of the 3-D printed samples could be used to enhance the performance of military equipment exposed to harsh weather conditions.
+
+Research was conducted to explore methods for dispersion and precipitation strengthening of aluminum alloys produced during liquid metal jet printing, which found that AA7068 can be printed with superior properties to AA7075 with the addition of zinc.
+
+
+ Naval Applications: 
+
+- Creating stronger and more durable end-use parts for military equipment using in situ dispersion and precipitation strengthening of aluminum alloys produced during liquid metal jet printing.
+- Improving the speed and efficiency of the DoD's supply chain through the use of 3D printers that can produce parts in a matter of hours instead of weeks, reducing "dead time" of equipment.
+
 
 ## Robotics and Controls Engineering
 
---
+
+### Kris Rodriguez
+
+Title: IMPLEMENTATION OF DECENTRALIZED UNMANNED SURFACE VEHICLE SWARM CONTROL
+
+
+Research was conducted to decentralize swarm control of unmanned surface vessels using computer vision, which was found to be effective in determining range and bearing between vehicles, with the impact of different camera capabilities and desired swarm behaviors being analyzed.
+
+
+ Naval Applications: 
+
+1. Implementing computer vision technology in unmanned surface vessels (USV) for decentralized control, allowing for more secure and covert swarm formation in military operations.
+2. Developing algorithms that utilize computer vision to enhance the range and bearing capabilities of USVs, allowing for improved coordination and communication in military operations.
+
+
+### Kyle Goncz
+
+Title: AN INVESTIGATION OF AI CAMERA CAPABILITIES FOR UNMANNED SURFACE VESSEL OPERATIONS
+
+
+Research was conducted to determine if low-cost AI-enabled stereo cameras could be used for GPS and RF-free navigation and coordination for USVs, and it was found that these cameras were able to accurately identify and localize surface vessels in experiments and field tests, with some limitations.
+
+
+ Naval Applications: 
+
+- Using low-cost AI-enabled stereo cameras for USV navigation and coordination in a GPS and RF-free environment.
+- Training a neural network to identify and classify different types of vessels, including Mokai USVs, using AI cameras and open-source Python libraries.
+
+
+### Amanda Marie Agustin
+
+Title: SELF-ASSESSMENT FOR ACTIVE TERRAIN AIDED NAVIGATION
+
+
+The paper presents an information-theoretic framework for in-situ self-assessment in Active Terrain Aided Navigation and demonstrates its importance for developing robust SLAM approaches in unknown environments through an AUV bathymetric survey.
+
+
+ Naval Applications: 
+
+1. Using the information-theoretic framework for in-situ self-assessment in Active Terrain Aided Navigation (ATAN) can enhance the accuracy and efficiency of military operations in unknown environments. 
+2. The self-assessment technique showcased in this paper can improve the reliability and effectiveness of SLAM (Simultaneous Localization and Mapping) approaches, making it a valuable tool for military applications such as autonomous navigation and mapping in unfamiliar terrains.
+
+
+### Jack Brake
+
+Title: OPTIMAL CABLE ROUTING USING TRAJECTORY OPTIMIZATION
+
+
+Research has shown that using a trajectory optimization-based approach for cable routing, rather than heuristic or machine learning algorithms, can lead to more optimal results and demonstrates the potential of trajectory optimization as an engineering design tool.
+
+
+ Naval Applications: 
+
+1. Optimizing cable routing for military vehicles and machinery to reduce material costs and increase efficiency.
+2. Using trajectory optimization-based approach for military cable routing to ensure optimal results and enable manipulation of cable lengths and orientations.
+
+
+### Alex Hooker
+
+Title: DEEP LEARNING MODEL UNCERTAINTY ESTIMATION USING MONTE CARLO DROPOUT TO IMPROVE UAV TARGET POSE PREDICTIONS
+
+
+Research was conducted to develop a methodology for assessing the trustworthiness of deep learning models used for target pose estimation in military applications, with the key conclusion being a proposed threshold of variance to determine when the model's output pose prediction should not be trusted.
+
+
+ Naval Applications: 
+
+1. Satellite rendezvous operations can benefit from target pose estimation using deep learning models that can quickly predict pose with quantified uncertainty.
+2. Directed energy weapons systems can utilize a methodology to assess the trustworthiness of a model's output pose prediction based on its uncertainty, using Monte Carlo dropout on in-distribution and out-of-distribution images of UAVs.
+
+
+### Timothy Meier
+
+Title: INTELLIGENT TRACKING AND ENHANCED SIMULATION OF THE SIM-1 UAS
+
+
+Research was conducted on the integration of intelligent tracking systems and advanced simulation techniques to improve the capabilities and safety of unmanned aerial vehicle (UAV) operations, with the key conclusion being that this approach can significantly enhance tracking accuracy and adaptability to dynamic environments, contributing to the advancement of UAV technology.
+
+
+ Naval Applications: 
+
+- Improving surveillance and reconnaissance capabilities in military operations through the integration of intelligent tracking systems and advanced simulation techniques in UAVs.
+- Enhancing the safety of UAV operations in dynamic environments by implementing failsafe mechanisms and utilizing code generated offboard the UAS by engineers using MATLAB and Simulink.
+
+
+### Samuel Nafus
+
+Title: INCREASED SPEED AND ENDURANCE OF ADVANCED MULTI-COPTERS THROUGH THE USE OF SIDE THRUSTERS
+
+
+Research was conducted on the Aqua-Quad, a quad-copter used for anti-submarine warfare, with the addition of horizontal side-thrusters being explored to improve cruise flight efficiency, and flight tests on a subscale model showed that the side-thrusters effectively regulated the pitch of the vehicle and increased its efficiency at high cruise speeds.
+
+
+ Naval Applications:  
+
+1. Improving cruise flight efficiency and range for anti-submarine warfare operations by adding horizontal side-thrusters to the Aqua-Quad quad-copter.
+2. Enhancing the energy independence and speed of the Aqua-Quad through the use of a solar array and autonomous secondary controller, making it a valuable asset for anti-submarine warfare operations.
 
 
 ## Space and Aerospace Engineering
 
 
-### Joseph Kelly
+### Nikhil Bhatnagar
 
-Research conducted in this thesis examines the effects of state information update frequency on spacecraft maneuver tactics for successful collision avoidance, and found that short-term optimal results can lead to either long-term advantages or disadvantages depending on the constraints used, and that an advantage in the update frequency of state information can mitigate a disadvantage in thrust. 
+Title: APPLICATION OF REINFORCEMENT LEARNING ON LASER GUIDE BOMBS FOR INCREASED LETHALITY
 
-1. Developing strategies for collision avoidance between two satellites using trajectory optimization tools.
-2. Examining the impacts of state information update frequency on spacecraft maneuver tactics.
 
-### Anna Sewall
+Research was conducted to investigate the use of reinforcement learning to enhance the lethality of the Enhanced Paveway II laser guided bomb by increasing kinetic energy on impact, with findings confirming the hypothesis but with only marginal improvements, suggesting further research into trajectory energy optimization with higher fidelity models.
 
-This research project investigated the use of piezoelectric materials to extend the flying time of UAVs, but the fabrication techniques of printed and molded polymers did not show piezoelectric activity.
 
-1. The Navy can use piezoelectric materials to extend the flying time of Unmanned Aerial Vehicles (UAVs) for military operations.
-2. Polymeric piezoelectric energy harvesters can be printed using stereolithography or cast in a mold to increase the endurance of UAVs.
+ Naval Applications: 
 
-### Jackson Dabek
+1. The Enhanced Paveway II laser guided bomb can be used by multiple airborne platforms to engage moving and stationary targets, making it a versatile weapon in military operations.
+2. The application of reinforcement learning (RL) to the pursuit guidance algorithm of the Enhanced Paveway II bomb can increase its lethality by improving kinetic energy on impact, making it a more effective and efficient precision-guided munition.
 
-This research study examined the variability of the atmospheric roughness length, z_0, using near-surface profile measurements from the R/P FLIP and derived a bulk parameterization for z_0 which was then compared to existing bulk relations, with implications for air-sea interaction modeling. 
 
-1. The bulk parameterization of ocean surface roughness derived from this research can be used for accurate marine forecasting for the U.S. Navy.
-2. The variability of flux footprints can be used to identify changes in z_0 upwind of the FLIP, which can be used to improve accuracy of air-sea interaction modeling for defense and military applications.
+### Christopher Deer
 
-### Matthew Tungett
+Title: DESIGN, CONSTRUCTION, AND FLOW SIMULATION OF A MACH 5+ HYPERSONIC WIND TUNNEL
 
-Research into a novel Floating Spacecraft Simulator (FSS) system utilizing a Kinova 7-degree-of-freedom robotic manipulator was conducted and resulted in a Multi-body Dynamics (MBD) model that was verified through simulations and physical hardware-in-the-loop testing, which confirmed its accuracy in capturing the real-world dynamics of the FSS system.
 
-1. The developed robotic manipulator MBD model of the FSS system could be used to develop advanced control algorithms for autonomous navigation of military or defense satellites. 
-2. The MBD model of the FSS system could be used to simulate and optimize satellite refueling, repair, and debris mitigation operations for military or defense applications.
+A paper discusses the design and construction of a Mach 5+ hypersonic wind tunnel in the Naval Postgraduate School's Gas Dynamics Lab, which was used to validate a reentry vehicle's computational fluid dynamic simulation and can continue to support future research in hypersonic weapon systems.
 
-### Katherine Lupo
 
-This thesis conducted research to design, optimize, and construct a floating spacecraft simulator with an attached seven degrees of freedom robotic arm, which was then successfully tested to demonstrate its capability to operate the thruster, air bearings, and robotic arm operations.
+ Naval Applications: 
 
-1. The FSS system designed and constructed in this thesis could be used to simulate on-orbit servicing (OOS) activities in a controlled environment, allowing for the testing and validation of new technologies and procedures.
-2. The FSS system could be used to simulate the conditions and dynamics of space, allowing for the development of OOS technology for use in military and defense applications such as repair, refueling, or debris removal of damaged spacecraft.
+1. Validation of computer simulations for hypersonic weapon systems and reentry vehicles.
+2. Testing and evaluation of structural strength and aerodynamic pressures in a hypersonic wind tunnel for the design and construction of a reentry vehicle.
 
-### Luke Lalumandier
 
-Research was conducted to develop an energy-optimal trajectory planning algorithm for unmanned aerial systems (UAS) to increase fuel-efficiency and provide a tactical advantage to the aircraft operator.
+### Collin Hippler
 
-1. Utilizing the energy-optimal trajectory planning algorithm to increase fuel-efficiency of military aircraft, thereby increasing time on station, payload capacity, operational range, and reducing operating costs. 
-2. Designing a guidance system to plan an energy-optimal route which takes advantage of favorable atmospheric effects and avoids detrimental atmospheric effects for Intelligence, Surveillance, and Reconnaissance (ISR) Unmanned Aerial Systems (UAS).
+Title: DESIGN OPTIMIZATION OF SPACE SYSTEM COMPONENTS USING ADDITIVE MANUFACTURING
 
-### Alejandro Corzo
 
-This paper investigates the survivability of NASA's Space Launch System and the Orion spacecraft in the event of a violent conflict in space, and proposes incorporating new technologies to address both artificial and natural threats, with a focus on missions to the moon though applicable to beyond.
+Research was conducted to explore the feasibility of combining design optimization techniques for rapidly optimizing components for use in aerospace systems, and it was found that a workflow centered around a lattice design produced the fastest and cheapest results.
 
-1. Develop advanced defensive systems for the Space Launch System and Orion spacecraft to protect them from artificial threats during a violent conflict in space.
-2. Incorporate new technologies into the Space Launch System and Orion spacecraft to enhance their survivability against natural threats during a space mission.
+
+ Naval Applications: 
+
+1. Design optimization techniques for space systems using additive manufacturing can lead to more efficient and cost-effective production of rocket structural brackets.
+2. Combining topology optimization and lattice design optimization can result in the most effective and high-performance aerospace components, but at a higher expense.
+
+
+### Justin Yu
+
+Title: EXECUTABLE SYSTEM ARCHITECTURE FOR CO-ORBITAL ENGAGEMENT MISSION ENGINEERING IN SYSTEM COMPOSER
+
+
+Research was conducted to integrate a Simulink model into System Composer to improve the capabilities and analysis of using Model-based systems engineering (MBSE) to assess co-orbital engagement scenarios, ultimately creating a more effective executable system architecture.
+
+
+ Naval Applications: 
+
+1. Using model-based systems engineering (MBSE) to develop tactics and assess co-orbital engagement scenarios for national security missions involving commercial spacecraft.
+2. Integrating Simulink models into System Composer to create a more efficient and effective executable model for simulating co-orbital engagement between an aggressor and target spacecraft, improving national defense capabilities.
+
+
+### Miles Zembruski
+
+Title: BILEVEL OPTIMIZATION FOR FAST CMG MANEUVERS
+
+
+Research was conducted to compare the effectiveness of using a bilevel optimization problem versus the Moore-Penrose pseudoinverse in maneuver optimization for spacecraft equipped with control moment gyro (CMG) systems, and it was found that both methods can significantly decrease maneuver time and are not dependent on the specific steering law used. 
+
+
+ Naval Applications: 
+
+1. Optimizing spacecraft reorientation for military satellite operations to improve maneuver time and accuracy.
+2. Enhancing closed-loop control and guidance systems for military aircraft to improve agility and maneuverability during combat missions.
+
+
+### Lukas Bley
+
+Title: IMPROVING AI ALGORITHMS FOR IMAGING SATELLITE OPTICAL ABERRATION ESTIMATION AND CORRECTION
+
+
+Research was conducted to investigate the use of artificial intelligence models for image correction and wavefront estimation in satellite images, resulting in the development of a combined algorithm that showed superior image correction performance compared to individual algorithms, suggesting potential cost-effective applications in post-processing and future satellites and telescopes.
+
+
+ Naval Applications: 
+
+1. Improved post-processing of satellite images through the use of the combined wavefront estimation-image correction algorithm (WE-IC).
+2. Implementation of the combined algorithm aboard future satellites and telescopes as a cost-effective alternative to traditional active and adaptive optics solutions.
+
 
 ## Thermodynamics, Fluid Dynamics and Energy
 
 
-### Collin Vorbroker 
+### Lacey Raschke
 
-Research was conducted to examine how three different ceramic compositions withstand CMAS penetration when exposed to a 1:1 CMAS water slurry and placed in a furnace at 1300°C and 1600°C for 1 and 10 hours, with the results showing CMAS intrusion and oxidation with varying effects on the material's nano-hardness.
+Title: DEGREE OF OXIDATION OF ULTRA-HIGH TEMPERATURE CERAMICS IN THE PRESENCE OF CALCIA-MAGNESIA-ALUMINO-SILICATE (CMAS)
 
-1. Thermal and environmental barrier coatings (T/EBC) can be applied to military turbine blades to increase performance and withstand higher operating temperatures. 
-2. Ceramics such as hafnium diboride (HfB2), zirconium diboride (ZrB2), and a high entropy ceramic diboride (Ta0.20, Zr0.20, Nb0.20, Hf0.20, Ti0.20)B2 can be used to protect turbine blades from liquified atmospheric particulates in defense applications.
 
-### Nathaniel Macdonald
+Research was conducted on the ability of ultra-high temperature ceramics (UHTCs) to resist CMAS attack in gas turbine engines, with HfB2, ZrB2, and HEB among the candidates, and two methods of CMAS application were explored to determine the most resistant UHTC.
 
-This research conducted an investigation into the potential of using detonation driven ignition and combustion in the augmentor of a jet engine, resulting in the development of a rotating detonating combustor model that could be integrated into the augmentor section of a jet engine and offer benefits such as reduced flow losses and shorter axial length requirements. 
 
-1. The detonation driven ignition and combustion in the augmentor of a jet engine could potentially increase fuel or ordnance capacity for volume constrained applications such as tactical missiles. 
-2. Integration of the rotating detonating combustor into the augmentor section of a jet engine could reduce flow losses by removing the need for flameholding hardware and likely reduce axial length requirements.
+ Naval Applications: 
 
-### William Murphy
+1. Designing and implementing thermal and environmental barrier coatings (T/EBCs) using ultra-high temperature ceramics (UHTCs) to protect sensitive engine components in gas turbine engines (GTEs) from extreme temperatures and highly oxidizing environments.
+2. Developing and testing UHTCs, specifically HfB2, ZrB2, and HEB, for their resistance to CMAS attack and oxidation in order to determine the most effective material for use in T/EBCs for GTEs.
 
-Research was conducted to analyze the use of high-density fuels such as JP-10 and gas generator simulants for tactical detonation engines, with the conclusion that the use of gas generator products in a fuel injection approach could increase the detonability limits and allow for a lower handoff Mach number, thereby increasing the operability envelope.
 
-1. The use of a rotating detonation engine for tactical purposes could improve the range and efficiency of military aircraft. 
-2. Detonation engines can be modified to use gas generator products, which removes the atomization and vaporization requirements of liquid fuels, allowing for a lower handoff Mach number and increased operability envelope for air-breathing systems.
+### David Huizenga
 
-### Jeremy Kmitta
+Title: MODELING HYDROGEN FUEL OPERATION OF A GAS TURBINE ENGINE
 
-Research was conducted on a sample steam pipe system to determine the location and quantity of excess moisture present, using ANSYS CFX and transient analysis, in order to inform the future design of such systems.
 
-1. The results of this research could be used to inform the design of steam pipe systems on military ships to increase efficiency and safety.
-2. The computational fluid dynamics software, ANSYS CFX, could be used to simulate the performance of steam pipe systems in military vessels, to help determine the location and quantity of moisture present.
+Research used CFD and thermodynamic cycle modeling to study hydrogen fuel in a 30 kW micro gas turbine engine, finding that it provides a unique solution for energy storage and production in the maritime environment and providing insight and recommendations for design and future investigations.
 
-### Damien Stonhill
 
-This research project used TRAC/RELAP Advanced Computational Engine (TRACE) to simulate transient two-phase high-quality steam flows in piping systems, and concluded that the performance of TRACE can be used to predict the moisture distribution under such conditions.
+ Naval Applications: 
 
-1. Simulating two-phase steam flows in piping systems for the Department of the Navy can help improve the safety, efficiency, and performance of future reactor designs. 
-2. Using TRAC/RELAP Advanced Computational Engine (TRACE) to predict the moisture distribution in transient two-phase high-quality steam flows can help reduce the complexity and cost of current steam piping systems while increasing their efficiency.
+1. Designing and optimizing hydrogen-fueled gas turbine engines for use in naval vessels for enhanced energy resilience and security in the maritime environment.
+2. Developing advanced computational models for simulating and analyzing the performance of hydrogen combustion chambers in micro gas turbine engines to improve efficiency and reduce emissions.
 
-### Damien Stonhill
 
-This research used TRACE to simulate transient two-phase high-quality steam flows in piping systems to improve the safety, efficiency, and performance of future reactor designs, and the results were compared to open literature data.
+### Keith Bliss
 
-1. Using the TRAC/RELAP Advanced Computational Engine (TRACE) to simulate transient two-phase high-quality steam flows can help the Department of the Navy to improve the safety, efficiency, and performance of future reactor designs. 
-2. Simulations generated by the TRAC/RELAP Advanced Computational Engine (TRACE) can be used to improve the design of steam piping systems, resulting in more efficient and cost-effective systems for the Department of the Navy.
+Title: ADDITIVELY MANUFACTURED INSTRUMENTATION FOR ENHANCED FLOWFIELD MEASUREMENT IN A TRANSONIC AXIAL COMPRESSOR
 
-### Colin Brennan
 
-This study examined the potential effects of sea level rise on the United States Naval Academy by creating a numerical model of the Severn River to simulate flooding conditions during an October 2021 extreme flooding event, showing that total inundated area would significantly increase by 2100 under three different sea level rise scenarios.
+Research was conducted to design additively manufactured instrumentation for measurement of pressure and temperature in the Naval Postgraduate School's Transonic Compressor Rig, with a focus on matching existing instruments' performance and developing a method for integrating Laser Doppler Anemometry measurement. The key conclusion was that the pressure probe had accurate measurements up to 17.5 degrees with a bias of 0.5 m/s and the temperature probe showed promising results with a bias of under 1 Kelvin, but further testing and design refinement is needed.
 
-1. Utilizing the Delft3D FM numerical model of the Severn River to develop accurate forecasts of extreme flooding events can help the US Navy better prepare for potential flooding issues around the Naval Academy. 
-2. The Delft3D FM numerical model can be used to test the effects of sea-level rise scenarios on flooding events, allowing the US Navy to anticipate the impact of potential flooding events in coastal areas.
+
+ Naval Applications: 
+
+1. Design and manufacture of instrumentation for measuring stagnation pressure and temperature in military aircraft engines, specifically in transonic conditions.
+2. Integration of Laser Doppler Anemometry (LDA) measurement in wind tunnels for testing and validating aircraft performance and aerodynamics.
+
+
+### Jett Isley
+
+Title: AUTOMATED COMPUTATIONAL TURBOMACHINE SPEEDLINE SIMULATION AND GEOMETRY OPTIMIZATION
+
+
+A novel automation strategy and coding tools were developed to generate computational speedline performance maps for compressors, allowing for rapid design iterations and optimization without manual intervention.
+
+
+ Naval Applications: 
+
+1. Design and optimization of compressors for aircraft engines, improving their performance and efficiency.
+2. Automation of compressor design and optimization for naval propulsion systems, allowing for rapid iteration and improvement of performance.
+
+
+### Hayden Perrin
+
+Title: FLUID STRUCTURE INTERACTION OF UNDULATING FLUID FLOW IN FLEXIBLE TUBING WITH PARTIAL CONSTRICTIONS
+
+
+Research was conducted to investigate the effects of constricted undulating fluid flow on flexible tubing, and the key conclusion was that these blockages can lead to increased material fatigue and premature failure in physical systems such as mechanical pumps and the human aorta.
+
+
+ Naval Applications: 
+
+1. Developing more efficient and durable mechanical piston pumps for maritime applications, such as the flow of 2190 TEP Diesel oil, by studying the fluid structure interaction and Von Mises stress alterations in constricted undulating fluid flow through flexible tubing.
+2. Improving the design and functionality of defense systems, such as atherosclerosis severity prediction in the human aorta, by utilizing numerical simulations to test the effects of increasing constriction size and altering flow rate frequency in cyclic fluid flow scenarios.
+
+
+### Max Plum
+
+Title: FLOW CHARACTERIZATION OF THE NAVAL POSTGRADUATE SCHOOL'S MACH 4 WIND TUNNEL
+
+
+Naval Postgraduate School conducted research on supersonic and hypersonic inlet un-start and renovated their Mach 4 Supersonic Wind Tunnel to achieve a quieter and more uniform flow field, finding that the tunnel had large vortices and asymmetries and yielded repeatable results but inconclusive information on turbulence intensity.
+
+
+ Naval Applications: 
+
+1. Developing and improving supersonic and hypersonic inlet designs for military aircraft to enhance their performance and stealth capabilities.
+2. Improving the accuracy and effectiveness of acoustic and turbulence intensity measurements in wind tunnels for testing and developing advanced military weapons and vehicles.
+
+
+### Blake Rowland
+
+Title: ANALYSIS OF WALL HEAT TRANSFER IN ROTATING DETONATION ENGINES
+
+
+Research was conducted to investigate the thermal aspect of implementing rotating detonation engines (RDEs) and it was found that injector geometries may leave an unmixed oxidizer layer near the combustor walls, which could have cooling benefits and should be considered in the design process.
+
+
+ Naval Applications: 
+
+- Military fighter jets and other aircraft could potentially use the RDE for increased thermal efficiency and faster speeds.
+- The RDE could also be used in missile technology for improved propulsion and increased range.
+
 
 ## Ship Design and Naval Engineering
 
 
-### Mary Robertson
+### Chad Nathe
 
-Research conducted on the U.S. Navy's Yard Torpedo Test Craft concluded that the craft should be retrofitted with new systems to accommodate different testing missions, including supporting large unmanned underwater vehicles, without compromising its existing torpedo testing mission. 
+Title: CONTROL STRATEGY FOR A FLEET OF AUTONOMOUS WIND POWERED VESSELS
 
-1. The YTT can be retrofitted with large unmanned underwater vehicles (UUV) to support distributed maritime operations and missions.
-2. The YTT can be outfitted with a multi-mission configurable combat systems suite to enable the craft to support multiple UUV missions.
+
+Research was conducted on the concept of autonomous wind-powered vessels equipped with hydrokinetic turbines and a control strategy was developed for a fleet of these vessels to operate near a naval base, taking into account wind direction and velocity.
+
+
+ Naval Applications: 
+
+1. Using autonomous wind-powered vessels with hydrokinetic turbines can provide the Navy with a renewable and sustainable source of energy for their bases and vessels.
+2. The development of a control strategy for a fleet of wind-powered vessels would allow for efficient and coordinated energy production and delivery, taking into account factors such as wind direction and velocity.
+
+
+### Cade Trauger
+
+Title: EFFICIENT NUMERICAL SIMULATION OF ADVANCE MULTI-COPTER CONFIGURATIONS IN CRUISE FLIGHT
+
+
+Research was conducted on the use of a modified version of Actuator Disk Theory to model advanced configurations of multi-copters in order to extend the range and endurance of Aqua-Quad for anti-submarine warfare.
+
+
+ Naval Applications: 
+
+1. Using Aqua-Quad for anti-submarine warfare missions would greatly enhance the Navy's ability to detect and track underwater targets for extended periods of time.
+2. By utilizing a "flock" of Aqua-Quads in a grid formation, the Navy could effectively cover a larger area and improve its ability to detect and track multiple underwater targets simultaneously.
+
+
+### Nathaniel Johnson
+
+Title: FAILURE ANALYSIS OF COMPACT FUSED DEPOSITION MODELING SYSTEMS UNDER VIBRATION LOADING
+
+
+Research was conducted to analyze the failure of 3D printing systems on ships and found that maximum velocity is the most reliable indicator for predicting failure, with common failures including the magnetic printing plate and loose set screws and fasteners.
+
+
+ Naval Applications: 
+
+1. Predicting and preventing failures in 3D printing systems installed aboard ships, allowing for reliable production of one-off parts under arduous conditions.
+2. Enhancing the durability and functionality of 3D printers used in military settings, such as aboard ships, through analysis of dynamic response and identification of potential points of failure.
+
 
 ## Survivability and Weaponeering
 
 
-### Keegan Delanoy
+### Brittany Barfield
 
-This research evaluated and developed swarm tactics for Unmanned Surface Vessels (USVs) to maximize their survivability and effectiveness using coordinated path planning and path following, with the results indicating that the Swarm Commander had the ability to control the aggressiveness of the trajectories to optimize survivability.
+Title: CHARACTERIZATION OF EXPLOSIVE YIELD RESULTING FROM SUBSEA BURIED ORDNANCE
 
-1. Utilizing USV swarms to protect larger vessels and other assets by providing a coordinated path planning system to maximize survivability against stationary weapons.
-2. Using MATLAB to assess and optimize the survivability of USV swarms by analyzing different tactics, swarm sizes, trajectories, and weapon characteristics.
 
-### Keegan Delanoy
+The thesis evaluated the loading of an underwater explosion caused by a subsurface charge in different locations relative to the ocean floor using the DYSMAS code, with the goal of understanding the complex nature of this phenomenon and its impact on different oceanic bottom types and materials to inform design for minesweeping and subsurface platforms.
 
-This research evaluated various swarm tactics for Unmanned Surface Vessels (USVs) using simulated and field tests to determine the optimal swarm size, trajectory, and weapon characteristics to maximize survivability against a stationary weapon.
 
-1. Utilizing the Swarm Commander to control aggressiveness of USV trajectories to maximize survivability against stationary weapons. 
-2. Equipping USVs with additional sensors and decoy tactics to increase perception and response to threat environments.
+ Naval Applications: 
+
+1. Modeling and simulation of underwater explosions for mine sweeping operations.
+2. Evaluation of the impact of underwater explosions on subsurface platforms and effectors to inform design for lethality and survivability.
+
+
+### Dylan Wood
+
+Title: UNDERWATER SHOCK LOADING OF CONCENTRIC PLA CYLINDERS WITH A FILAMENT ANNULUS
+
+
+Research was conducted on the dynamic loading of 3D-printed concentric PLA cylinders when subjected to an underwater shock event, and it was concluded that the cube pattern was the most effective in terms of survivability and ease of design and implementation.
+
+
+ Naval Applications: 
+
+1. Designing and manufacturing 3D-printed concentric PLA cylinders with different filament annulus patterns for use in underwater explosives detection and disposal.
+2. Enhancing the survivability of military equipment and vehicles by studying the effects of outer cylinder strain when subjected to shock waves, and using the most optimal filament annulus pattern to reduce damage and maintain structural integrity.
+
 
 ## Solid Mechanics and Structure Engineering
 
-
-### Taylor Adams
-
-Research conducted at the NPS Turbopropulsion Lab to modernize the transonic compressor rig's temperature and pressure instrumentation resulted in an optimized solution that provides more accurate and repeatable measurements on military fan engines.
-
-1. The new casing and pressure and temperature probes can be used to improve the accuracy and repeatability of military fan engine research.
-2. The CFD analysis of the stator provides an effective way to identify the optimal location for pressure and temperature probes on military fan engines.
+--

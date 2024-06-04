@@ -38,12 +38,18 @@ def cat_prompt(categories, ab_str):
     
     return preamble + '\nParagraph:\n' +ab_str
 
+
+def ensure_newline(text):
+    if not text.endswith('\n'):
+        text += '\n'
+    return text
+
 # Load the .env variables and set API key.
 load_dotenv() 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Open Excel file with authors and abstracts.
-datafile='abstracts.xlsx'
+datafile='abstracts2024.xlsx'
 wb = openpyxl.load_workbook(datafile)
 ws = wb.active
 
@@ -54,9 +60,17 @@ for row in ws.iter_rows(
         min_col=1, max_col=ws.max_column,
         values_only=True):
     resp = Resp()
-    resp.name = row[0]
-    resp.abstract = row[1]
-    records.append(resp)
+    resp.name = row[2] + " " + row[1]
+    resp.title = row[11]
+    # Use thesis abstract as primary
+    resp.abstract = row[12]
+    if (resp.abstract is None):
+        # try using proposal abstract
+        resp.abstract = row[13]
+    if (not (resp.abstract is None)):
+        records.append(resp)
+    else:
+        print("! Can't find an abstract for %s"%resp.name)
 
 # Specify the categories for organizing the topics.
 categories = ['Materials Science and Engineering',
@@ -68,7 +82,7 @@ categories = ['Materials Science and Engineering',
               'Solid Mechanics and Structure Engineering']
 
 # Specify which Open AI model we want to use.
-model = "text-davinci-003"
+model = "gpt-3.5-turbo-instruct"
 
 # Loop through the records and do three queries for each record:
 # 1. Summarize 2. Appply and 3. Categorize 
@@ -128,9 +142,10 @@ for c in categories:
     cnt = 0
     for record in records:
         if record.category.find(c) > 0:
-            f.write("\n\n### " + record.name + "")
-            f.write(record.summary)
-            f.write(record.applications)
+            f.write("\n\n### " + ensure_newline(record.name) + "\n")
+            f.write("Title: %s"%ensure_newline(record.title))
+            f.write(ensure_newline(record.summary))
+            f.write("\n\n Naval Applications: %s"%ensure_newline(record.applications))
             cnt += 1
     if cnt < 1:
         f.write('\n--\n')
